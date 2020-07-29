@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Todo = ({onClick, completed, text}) => {
-  console.log(onClick)
   return(
     <li
       onClick={onClick}
