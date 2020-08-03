@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import * as firebase from "firebase/app";
 
+import "./bootstrap.css";
+import "./index.css";
 import todoApp from "./reducers";
 import App from "./components/App";
 

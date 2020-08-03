@@ -28,7 +28,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="container p-3 p-md-5">
       <AddTodo />
       <VisibleTodoList />
       <Footer />
