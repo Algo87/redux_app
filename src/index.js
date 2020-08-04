@@ -7,7 +7,7 @@ import * as firebase from "firebase/app";
 import "./bootstrap.css";
 import "./index.css";
 import todoApp from "./reducers";
-import App from "./components/App";
+import App from "./App";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA-3GH_FYNWvUZ6gLu4-t1WlUXdh6YQSoA",
