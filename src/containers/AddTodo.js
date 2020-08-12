@@ -7,7 +7,7 @@ let AddTodo = () => {
   let dispatch = useDispatch();
 
   return (
-    <div>
+    <React.Fragment>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -30,9 +30,8 @@ let AddTodo = () => {
           </button>
         </div>
       </form>
-    </div>
+    </React.Fragment>
   );
 };
-// AddTodo = connect()(AddTodo)
 
 export default AddTodo;

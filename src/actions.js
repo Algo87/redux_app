@@ -5,6 +5,8 @@
 export const ADD_TODO = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+export const IS_LOGIN = 'IS_LOGIN'
+export const IS_LOGOUT = 'IS_LOGOUT'
 
 /*
  * другие константы
@@ -40,9 +42,16 @@ export function setVisibilityFilter(filter) {
   return {type: SET_VISIBILITY_FILTER, filter}
 }
 
-export default function isLogin(isAuth) {
+export default  function isLogin(isAuth) {
   return {
-    type: "ISAUTH",
+    type: IS_LOGIN,
     isAuth: isAuth
+  }
+}
+
+export function isLogout(logout) {
+  return {
+    type: IS_LOGOUT,
+    logout: logout
   }
 }

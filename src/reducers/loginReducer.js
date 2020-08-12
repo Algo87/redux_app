@@ -1,9 +1,9 @@
-const LoginReducer = (state=false, action) => {
-  console.log(state)
-  console.log(action)
-
+const initialState={
+  isAuth:false
+}
+const LoginReducer = (state=initialState, action) => {
   switch (action.type) {
-    case("ISAUTH"):
+    case('IS_LOGIN'):
       return {
         ...state,
         isAuth: action.isAuth
