@@ -19,12 +19,14 @@ export const VisibilityFilters = {
 /*
  * генераторы экшенов
  */
-let nextTodoId=0;
+let nextTodoId = 0;
+
 export function addTodo(text) {
   return {
     type: ADD_TODO,
-    id:nextTodoId++,
-    text }
+    id: nextTodoId++,
+    text
+  }
 }
 
 export function toggleTodo(id) {
@@ -35,5 +37,12 @@ export function toggleTodo(id) {
 }
 
 export function setVisibilityFilter(filter) {
-  return { type: SET_VISIBILITY_FILTER, filter }
+  return {type: SET_VISIBILITY_FILTER, filter}
+}
+
+export default function isLogin(isAuth) {
+  return {
+    type: "ISAUTH",
+    isAuth: isAuth
+  }
 }

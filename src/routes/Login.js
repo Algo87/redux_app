@@ -1,6 +1,7 @@
 import React from "react";
 import * as firebase from "firebase/app";
 import "firebase/auth";
+import isLogin from '../actions'
 
 const provider = new firebase.auth.GoogleAuthProvider();
 
@@ -9,8 +10,12 @@ export default function Login() {
     firebase
       .auth()
       .signInWithPopup(provider)
-      .then((result) => console.log(result))
+      .then((result) => {
+        isLogin(result);
+       return  console.log(result)
+      })
       .catch((error) => console.error(error));
+
   }
 
   return (
